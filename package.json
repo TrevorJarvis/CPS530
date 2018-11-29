@@ -2,7 +2,7 @@
   "name": "cps530",
   "version": "1.0.0",
   "description": "CPS530 Final Project",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "@types/express": "^4.16.0",
     "express": "^4.16.4"
