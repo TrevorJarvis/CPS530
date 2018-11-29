@@ -13,12 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phuocpeter19/CPS530.git"
+    "url": "git+https://github.com/TrevorJarvis/CPS530.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/phuocpeter19/CPS530/issues"
+    "url": "https://github.com/TrevorJarvis/CPS530/issues"
   },
-  "homepage": "https://github.com/phuocpeter19/CPS530#readme"
+  "homepage": "https://github.com/TrevorJarvis/CPS530#readme",
+  "proxy": "http://localhost:3000/"
 }
