@@ -1,0 +1,24 @@
+{
+  "name": "cps530",
+  "version": "1.0.0",
+  "description": "CPS530 Final Project",
+  "main": "index.js",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phuocpeter19/CPS530.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phuocpeter19/CPS530/issues"
+  },
+  "homepage": "https://github.com/phuocpeter19/CPS530#readme"
+}
