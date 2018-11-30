@@ -22,7 +22,7 @@ class Installation extends Component {
             <li>Add <code>expressJS</code> to the project by using <code>npm i --save express</code>.</li>
             <li>Create a file <code>index.js</code> in the root of the directory. This <code>index.js</code> is the main entry point of your ExpressJS app. This is the minimal code to setup the app.
               <br/>
-              <textarea class="form-control">{`// File index.js
+              <textarea class="form-control" readOnly="true" rows="15">{`// File index.js
                 const express = require("express");
                 const path = require('path');
                 const app = express();
