@@ -20,24 +20,24 @@ nav li a {
 nav li {
   font-family: "Lato", sans-serif;
   float: left;
-  border-right: 1px solid #bbb;
+  /*border-right: 1px solid #bbb;*/
 }
 
 nav li a:hover {
   font-family: "Lato", sans-serif;
-  background-color: #838383;
-  color: white;
+  /*background-color: #a1a1a1;*/
+  color: #61dafb;
   text-decoration: none;
   transition: all 0.3s ease-in;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 
 .active {
   font-family: "Lato", sans-serif;
-  background-color: #838383;
-  color: white;
+  /*background-color: #838383;*/
+  color: #61dafb;
   text-decoration: none;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 
 nav ul {
@@ -46,11 +46,48 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-image: url("footer_lodyas.png");
+  /*background-color: #282c34;*/
+}
+
+h1 {
+  font-weight: bold;
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.homepage:after {
+  content: " ";
+  position: absolute;
+  width: 700px;
+  margin: 0%;
+  padding-top: 100px;
+  border-bottom: 1px solid rgb(85, 84, 84);
+  left: 31.5%;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  background: #bbb;
+  background-image: url("footer_lodyas.png");
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.App {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  height: 1500px;
+  height: 100%;
+  background: white;
+
+  /*box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }

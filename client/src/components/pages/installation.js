@@ -22,7 +22,7 @@ class Installation extends Component {
             <li>Add <code>expressJS</code> to the project by using <code>npm i --save express</code>.</li>
             <li>Create a file <code>index.js</code> in the root of the directory. This <code>index.js</code> is the main entry point of your ExpressJS app. This is the minimal code to setup the app.
               <br/>
-              <textarea class="form-control" readOnly="true" rows="15">{`// File index.js
+              <textarea className="form-control" readOnly={true} rows="15" value={`// File index.js
                 const express = require("express");
                 const path = require('path');
                 const app = express();
@@ -38,8 +38,7 @@ class Installation extends Component {
               // Run the app
                 app.listen(port, () => {
                 console.log(\`The app is listening on port {port}\`);
-              });`}
-              </textarea>
+              });`}/>
             </li>
             <li>Design your app in <code>index.html</code>. You can use any front-end framework to design it such as ReactJS.</li>
             <li>Run your app using <code>npm start</code>. The app can now be access on <code>http://localhost:5000</code>.</li>
