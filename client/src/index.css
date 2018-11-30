@@ -8,7 +8,7 @@ header {
   height: 58px;
 }
 
-li a {
+nav li a {
   font-family: "Lato", sans-serif;
   display: block;
   color: white;
@@ -17,13 +17,13 @@ li a {
   text-decoration: none;
 }
 
-li {
+nav li {
   font-family: "Lato", sans-serif;
   float: left;
   border-right: 1px solid #bbb;
 }
 
-li a:hover {
+nav li a:hover {
   font-family: "Lato", sans-serif;
   background-color: #838383;
   color: white;
@@ -40,7 +40,7 @@ li a:hover {
   border: 1px solid white;
 }
 
-ul {
+nav ul {
   font-family: "Lato", sans-serif;
   list-style-type: none;
   margin: 0;
