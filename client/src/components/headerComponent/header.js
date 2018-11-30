@@ -8,27 +8,27 @@ class Header extends Component {
         <nav>
           <ul>
             <li>
-              <NavLink to="/Homepage" exact activeClassName="active">
+              <NavLink exact to="/" activeClassName="active">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Installation" exact activeClassName="active">
+              <NavLink to="/installation" exact activeClassName="active">
                 Installation
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Tutorial" exact activeClassName="active">
+              <NavLink to="/tutorial" exact activeClassName="active">
                 Tutorial
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Demo" exact activeClassName="active">
+              <NavLink to="/demo" exact activeClassName="active">
                 Demo
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Conclusion" exact activeClassName="active">
+              <NavLink to="/conclusion" exact activeClassName="active">
                 Conclusion
               </NavLink>
             </li>
