@@ -1,11 +1,23 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Link, NavLink } from "react-router-dom";
 
+import tree from "../../Tree.png";
+
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: props.name,
+      picUrl: props.picUrl ? props.picUrl : tree,
+      desc: props.desc
+    };
+  }
+
   render() {
     return (
       <header>
         <nav>
+          <img className="logo" src={this.state.picUrl} alt={this.state.name} />
           <ul>
             <li>
               <NavLink exact to="/" activeClassName="active">
