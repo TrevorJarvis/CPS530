@@ -13,11 +13,11 @@ class Profile extends Component {
 
   render() {
     return (
-    <div className="profile card" style={{width: "18rem"}}>
+    <div className="profile card" style={{width: "20rem"}}>
       <img className="card-img-top" src={this.state.picUrl} alt={this.state.name}/>
       <div className="card-body">
         <h4 className="mt-0">{this.state.name}</h4>
-        {this.state.desc}
+        <em>{this.state.desc}</em>
       </div>
     </div>
   )}

@@ -33,7 +33,7 @@ class Header extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Credits" exact activeClassName="active">
+              <NavLink to="/credits" exact activeClassName="active">
                 Credits
               </NavLink>
             </li>

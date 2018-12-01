@@ -14,25 +14,25 @@ class Conclusion extends Component {
             </li>
             <li>
               <p>The framework meets our expectation.</p>
-              <p><ul>
+              <ul>
                 <li>It is a versatile and flexible framework.</li>
                 <li>Middlewares can used to add a lot of functionality to the server (e.g. logging, http body parser, etc.).</li>
-              </ul></p>
+              </ul>
             </li>
             <li>
               <p>It is easy to serve webpages with ExpressJS.</p>
-              <p><ul>
+              <ul>
                 <li>ExpressJS can serve static HTML/CSS/Javascript webpages on request.</li>
                 <li>It can also use template engines such as Pug to dynamically render static templates.</li>
-              </ul></p>
+              </ul>
             </li>
             <li>
               <p>The learning curve with ExpressJS is can be a bit steep.</p>
-              <p><ul>
+              <ul>
                 <li>It is easy to get started with NodeJS since it is just Javascript.</li>
                 <li>It is also easy to serve static HTML/CSS/Javascript.</li>
                 <li>However, it requires more understanding to take advantage of ExpressJS' middleware extension.</li>
-              </ul></p>
+              </ul>
             </li>
             <li>
               <p>In retrospect, we would spend more time to learn and take full advantage of extending ExpressJS capabilities with middlewares.</p>
