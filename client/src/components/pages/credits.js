@@ -20,7 +20,7 @@ class Credits extends Component {
               <Profile name="Kevin Duong" desc="Researched on the popularity, strengths, weaknesses and relevant information on ExpressJS framework."/>
             </div>
             <div className="col" align="center">
-              <Profile name="Phuoc Tran" desc="Implemented the backend with ExpressJS."/>
+              <Profile name="Phuoc Tran" desc="Wrote the tutorial covering the installation of ExpressJS on Raspberry Pi."/>
             </div>
           </div>
         </div>
