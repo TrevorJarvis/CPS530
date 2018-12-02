@@ -22,10 +22,11 @@ class MessageForm extends Component {
     var message = this.state;
     axios.post('/api/messages/', message)
     .then(res => {
-      console.log(res);
+      alert('Your message is posted successfully.');
+      window.location = '/demo';
     })
     .catch(err => {
-      console.log(err);
+      alert('Oops an error occurred (' + err + ')');
     });
   }
 
@@ -49,9 +50,9 @@ class MessageForm extends Component {
 
   render() {
     return(
-      <form className="card m-3">
-        <input className="form-control" type="text" name="content" id="content" placeholder="Write something!" required value={this.state.content} onChange={this.handleChange}/>
-        <input className="form-control" type="text" name="author" id="name" placeholder="Anonymous" value={this.state.author} onChange={this.handleChange}/>
+      <form className="card m-3 p-2">
+        <input className="form-control mb-2" type="text" name="content" id="content" placeholder="Write something!" required value={this.state.content} onChange={this.handleChange}/>
+        <input className="form-control" type="text" name="author" id="name" placeholder="Anonymous" value={this.state.author} onChange={this.handleChange} defaultValue="Anonymous"/>
         <div className="row" align="center">
           <div className="col">
             <label for="textColor">Choose color for your text</label>

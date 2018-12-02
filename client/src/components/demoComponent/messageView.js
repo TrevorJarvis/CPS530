@@ -18,7 +18,6 @@ class MessageView extends Component {
     .then(res => {
       var data = res.data;
       this.setState({ messages: data });
-      console.log(data);
     })
     .catch(err => {
       alert(err);
