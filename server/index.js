@@ -5,7 +5,7 @@ const Message = require('./models/messageModel');
 
 const path = require('path');
 const app = express();
-const port = 5000;
+const port = 3001;
 
 const db = mongoose.connect('mongodb://cps530:cps530pass@ds051990.mlab.com:51990/cps530');
 
