@@ -52,14 +52,14 @@ class MessageForm extends Component {
     return(
       <form className="card m-3 p-2">
         <input className="form-control mb-2" type="text" name="content" id="content" placeholder="Write something!" required value={this.state.content} onChange={this.handleChange}/>
-        <input className="form-control" type="text" name="author" id="name" placeholder="Anonymous" value={this.state.author} onChange={this.handleChange} defaultValue="Anonymous"/>
+        <input className="form-control" type="text" name="author" id="name" placeholder="Your name (e.g. Anonymous)" value={this.state.author} onChange={this.handleChange} required/>
         <div className="row" align="center">
           <div className="col">
-            <label for="textColor">Choose color for your text</label>
+            <label htmlFor="textColor">Choose color for your text</label>
             <BlockPicker triangle="hide" name="textColor" color={this.state.textColor} onChange={this.handleTextColorChange}/>
           </div>
           <div className="col">
-            <label for="backgroundColor">Choose color for your background</label>
+            <label htmlFor="backgroundColor">Choose color for your background</label>
             <BlockPicker triangle="hide" name="backgroundColor" color={this.state.backgroundColor} onChange={this.handleBackgroundColorChange}/>
           </div>
         </div>
