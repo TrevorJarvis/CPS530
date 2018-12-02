@@ -15,11 +15,11 @@ class MessageModel extends Component {
 
   render() {
     const style = {
-      backgroundColor: '#' + this.state.backgroundColor,
-      color: '#' + this.state.textColor
+      backgroundColor: this.state.backgroundColor,
+      color: this.state.textColor
     }
     return(
-      <div className="message card"
+      <div className="message card m-3"
         style={style}>
         <div className="card-body">
           <h5><strong>{this.state.author}</strong></h5>
