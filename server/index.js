@@ -14,16 +14,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/', express.static(path.join(__dirname, '../client/public')));
 app.get('/api/messages', (req, res, next) => {
-	Message.find({}, (err, messages) => {
-		res.json(messages);
+	Message.find({})
+		.sort('-date')
+		.exec((err, messages) => {
+			res.json(messages);
 	});
 });
 
 app.post('/api/messages', (req, res, next) => {
 	console.log(req.body);
+	let now = (new Date()).toLocaleString();
 	let message = new Message({ 
 		content: req.body.content, 
-		date: Date(),
+		date: now,
 		author: req.body.author,
 		textColor: req.body.textColor,
 		backgroundColor: req.body.backgroundColor
