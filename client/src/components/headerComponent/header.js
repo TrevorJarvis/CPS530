@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import tree from "../../Tree.png";
 

@@ -99,3 +99,9 @@ nav .logo {
   height: 60px;
   width: 60px;
 }
+
+textarea {
+  font-family: monospace;
+  color: #66d9ef;
+  background-color: #272822
+}

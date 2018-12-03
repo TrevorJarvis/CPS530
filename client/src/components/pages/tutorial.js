@@ -36,7 +36,7 @@ class Tutorial extends Component {
               <li>
                 At the top of this file we need to import a few libraries.
                 <textarea
-                  className="form-control"
+                  className="form-control bg-dark text-info"
                   readOnly={true}
                   rows="3"
                   value={`import React, { Component } from 'react';
@@ -53,7 +53,7 @@ import { BlockPicker } from 'react-color';`}
             the user will be able to input information. Within our class we must
             create a form that will take input. To do this we do the following:
             <textarea
-              className="form-control"
+              className="form-control bg-dark text-info"
               readOnly={true}
               rows="9"
               value={` render() {
@@ -82,7 +82,7 @@ import { BlockPicker } from 'react-color';`}
                 Therefore, we need to pass it.
               </li>
               <textarea
-                className="form-control"
+                className="form-control bg-dark text-info"
                 readOnly={true}
                 rows="6"
                 value={`this.handleChange = this.handleChange.bind(this);
@@ -107,7 +107,7 @@ handleChange(event) {
             <br />
             <p>First we must create two methods before the render block.</p>
             <textarea
-              className="form-control"
+              className="form-control bg-dark text-info"
               readOnly={true}
               rows="11"
               value={`handleTextColorChange(color) {
@@ -128,7 +128,7 @@ handleBackgroundColorChange(color) {
               below where we take user input we can display the color picker.
             </p>
             <textarea
-              className="form-control"
+              className="form-control bg-dark text-info"
               readOnly={true}
               rows="6"
               value={`<label for="textColor">Choose color for your text</label>
@@ -147,7 +147,7 @@ handleBackgroundColorChange(color) {
               Outside the render block, create the class <code>submitForm</code>
               .
               <textarea
-                className="form-control"
+                className="form-control bg-dark text-info"
                 readOnly={true}
                 rows="4"
                 value={`submitForm() {
@@ -161,7 +161,7 @@ handleBackgroundColorChange(color) {
               able to submit the information.
             </li>
             <textarea
-              className="form-control"
+              className="form-control bg-dark text-info"
               readOnly={true}
               rows="1"
               value={`<button type="button" onClick={this.submitForm}>Send</button>`}
@@ -176,7 +176,7 @@ handleBackgroundColorChange(color) {
             First we must import all our data that the user gave us in the
             constructor. We create the constructor outside the render block.
             <textarea
-              className="form-control"
+              className="form-control bg-dark text-info"
               readOnly={true}
               rows="11"
               value={`constructor(props) {
@@ -197,7 +197,7 @@ handleBackgroundColorChange(color) {
             Next, if the user has selected a color for their text and background
             we import those within the render block.
             <textarea
-              className="form-control"
+              className="form-control bg-dark text-info"
               readOnly={true}
               rows="4"
               value={`const style = {
@@ -212,7 +212,7 @@ handleBackgroundColorChange(color) {
             draw it. Below the color selection but still within the render
             block.
             <textarea
-              className="form-control"
+              className="form-control bg-dark text-info"
               readOnly={true}
               rows="3"
               value={`<h5><strong>{this.state.author}</strong></h5>
@@ -226,7 +226,7 @@ handleBackgroundColorChange(color) {
             <ul>
               At the top of this file we must import:
               <textarea
-                className="form-control"
+                className="form-control bg-dark text-info"
                 readOnly={true}
                 rows="3"
                 value={`import React, { Component } from "react";
@@ -241,7 +241,7 @@ import MessageModel from "./messageModel";`}
             storing the data that our message card will contain. We need to
             create a constructor and some methods to retrieve that information.
             <textarea
-              className="form-control"
+              className="form-control bg-dark text-info"
               readOnly={true}
               rows="21"
               value={`constructor(props) {
@@ -272,7 +272,7 @@ getMessages() {
             Lastly, we must now display the message cards onto the page. Within
             the render method we must output our data.
             <textarea
-              className="form-control"
+              className="form-control bg-dark text-info"
               readOnly={true}
               rows="18"
               value={`return (

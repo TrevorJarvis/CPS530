@@ -25,7 +25,7 @@ class Homepage extends Component {
           </p>
           <p>
             What makes React so great is how it’s based on components.
-            Components allow for your programming to be more modular and
+            Components allow your program to be more modular and
             reusable. Due to the reusable nature of react, code becomes a lot
             easier to develop off of and maintain.
           </p>
@@ -56,40 +56,40 @@ class Homepage extends Component {
 		  <br />
 		  <h3>Popularity</h3>
 		  <p>
-			Express.JS is framework built based on Node.JS. Express.JS is built to 
+			ExpressJS is framework built based on NodeJS. ExpressJS is built to 
 			assist on routing, creating a server, parsing, etc. It makes all these 
 			tasks much more simple to do. It is also very versatile and allows ease
 			of adding middlewares.
 		  </p>
 		  <p>
-			Because of these features, Express.JS is the one most popular web 
-			application framework of Node.JS.
+			Because of these features, ExpressJS is the one most popular web 
+			application framework of NodeJS.
 		  </p>
 		  <br />
 		  <h3>Strengths</h3>
 		  <p>
-			As a framework of Node.JS, it offers on what Node.JS brings. It is very 
+			As a framework of NodeJS, it offers on what NodeJS brings. It is very 
 			easy to learn if the user already knows JavaScript which is also one of
 			the most popular among programming languages.
 		  </p>
 		  <p>
-			Express.JS has friendly integration of middleware and third party services.
-			Express.JS is designed to integrate these middleware with ease and solve
+			ExpressJS has friendly integration of middleware and third party services.
+			ExpressJS is designed to integrate these middleware with ease and solve
 			different development problems. The choice of middleware is very flexible
 			and the user is able to choose which any they want to solve any problem.
 		  </p>
 		  <p>
-			Express.JS is one the most mature Node.Js frameworks, so the open source
+			ExpressJS is one the most mature NodeJs frameworks, so the open source
 			community has a decent size.
 		  </p>
 		  <br />
 		  <h3>Weaknesses</h3>
 		  <p>
-			Express.JS will also come with the disadvantages of Node.JS. Node.JS is a
-			single threaded framework, so it is prone to "callback hell." This will
+			ExpressJS will also come with the disadvantages of NodeJS. NodeJS is a
+			single threaded framework, so it is prone to "callback hell". This will
 			cause some performance issues on heavy computation systems. If users
 			decide on using heavy-computing apps, it is recommended to use other
-			framework that does not rely on Node.JS.
+			framework that does not rely on NodeJS.
 		  </p>
 		  <br />
         </div>		

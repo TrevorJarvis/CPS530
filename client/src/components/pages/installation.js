@@ -74,7 +74,7 @@ class Installation extends Component {
               ExpressJS app. This is the minimal code to setup the app.
               <br />
               <textarea
-                className="form-control"
+                className="form-control bg-dark text-info"
                 readOnly={true}
                 rows="15"
                 value={`// File index.js
