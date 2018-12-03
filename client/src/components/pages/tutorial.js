@@ -31,7 +31,7 @@ class Tutorial extends Component {
           </li>
           <br />
           <li>
-            To begin, create a class named <code>messageForm.js</code>.
+            To begin, create a new file named <code>messageForm.js</code>.
             <ul>
               <li>
                 At the top of this file we need to import a few libraries.
@@ -41,8 +41,7 @@ class Tutorial extends Component {
                   rows="3"
                   value={`import React, { Component } from 'react';
 import axios from 'axios';
-import { BlockPicker } from 'react-color';
-                `}
+import { BlockPicker } from 'react-color';`}
                 />
               </li>
             </ul>
@@ -165,10 +164,144 @@ handleBackgroundColorChange(color) {
               className="form-control"
               readOnly={true}
               rows="1"
-              value={`<button className="btn btn-primary" type="button" onClick={this.submitForm}>Send</button>`}
+              value={`<button type="button" onClick={this.submitForm}>Send</button>`}
             />
           </ul>
+          <br />
+          <li>
+            Create a new file named <code>messageModel.js</code>.
+          </li>
+          <br />
+          <li>
+            First we must import all our data that the user gave us in the
+            constructor. We create the constructor outside the render block.
+            <textarea
+              className="form-control"
+              readOnly={true}
+              rows="11"
+              value={`constructor(props) {
+                  super(props);
+                  const now = new Date(props.date);
+                  this.state = {
+                    content: props.content,
+                    author: props.author,
+                    textColor: props.textColor,
+                    backgroundColor: props.backgroundColor,
+                    date: now.toLocaleString()
+                  };
+}`}
+            />
+          </li>
+          <br />
+          <li>
+            Next, if the user has selected a color for their text and background
+            we import those within the render block.
+            <textarea
+              className="form-control"
+              readOnly={true}
+              rows="4"
+              value={`const style = {
+                backgroundColor: this.state.backgroundColor,
+                color: this.state.textColor
+};`}
+            />
+          </li>
+          <br />
+          <li>
+            Finally, we populate our card with all of our data and get ready
+            draw it. Below the color selection but still within the render
+            block.
+            <textarea
+              className="form-control"
+              readOnly={true}
+              rows="3"
+              value={`<h5><strong>{this.state.author}</strong></h5>
+<span style={{ display: "block" }}>{this.state.content}</span>
+<em>Posted {this.state.date.toString()}.</em>`}
+            />
+          </li>
+          <br />
+          <li>
+            We now create one more file called <code>messageView.js</code>.
+            <ul>
+              At the top of this file we must import:
+              <textarea
+                className="form-control"
+                readOnly={true}
+                rows="3"
+                value={`import React, { Component } from "react";
+import axios from "axios";
+import MessageModel from "./messageModel";`}
+              />
+            </ul>
+          </li>
+          <br />
+          <li>
+            We imported <code>messageModel</code> because it is currently
+            storing the data that our message card will contain. We need to
+            create a constructor and some methods to retrieve that information.
+            <textarea
+              className="form-control"
+              readOnly={true}
+              rows="21"
+              value={`constructor(props) {
+                  super(props);
+                  this.state = { messages: null };
+                  this.getMessages = this.getMessages.bind(this);
+}
+              
+componentDidMount() {
+                  this.getMessages();
+}
+              
+getMessages() {
+                  axios
+                    .get("/api/messages")
+                    .then(res => {
+                      var data = res.data;
+                      this.setState({ messages: data });
+                    })
+                    .catch(err => {
+                      alert(err);
+                    });
+}`}
+            />
+          </li>
+          <br />
+          <li>
+            Lastly, we must now display the message cards onto the page. Within
+            the render method we must output our data.
+            <textarea
+              className="form-control"
+              readOnly={true}
+              rows="18"
+              value={`return (
+                  <ul>
+                    {this.state.messages &&
+                      this.state.messages.map((message, i) => {
+                        return (
+                          <li key={i}>
+                            <MessageModel
+                              content={message.content}
+                              author={message.author}
+                              date={message.date}
+                              textColor={message.textColor}
+                              backgroundColor={message.backgroundColor}
+                            />
+                          </li>
+                        );
+                      })}
+                  </ul>
+);`}
+            />
+          </li>
         </ol>
+        <br />
+        <p>
+          After following these steps, you will have a webpage similar to what
+          is display in Demo.
+        </p>
+        <br />
       </div>
     );
   }
